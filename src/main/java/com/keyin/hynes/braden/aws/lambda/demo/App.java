@@ -6,10 +6,8 @@ public class App implements RequestHandler<
   Object, // input class
   String // output class
 > {
-  public App() {}
-  // AWS Lambda functions written in Java don't use a PSVM.
+  // AWS Lambda functions written in Java start with handleRequest instead of PSVM. 
   @Override
-  // The output has to be of the same class declared above.
   public String handleRequest(
     Object input,
     Context context
