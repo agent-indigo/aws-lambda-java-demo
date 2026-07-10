@@ -4,5 +4,5 @@ target/
 .DS_Store
 application.properties
 dependency-reduced-pom.xml
-[Dd]esktop.ini
+desktop.ini
 thumbs.db

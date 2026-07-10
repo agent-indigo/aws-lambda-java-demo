@@ -1,7 +1,7 @@
 package com.keyin.hynes.braden.aws.lambda.demo;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-public class App implements RequestHandler<
+public final class App implements RequestHandler<
   // These classes can be anything.
   Object, // input class
   String // output class
@@ -10,8 +10,8 @@ public class App implements RequestHandler<
   // start with handleRequest instead of PSVM. 
   @Override
   public String handleRequest(
-    Object input,
-    Context context
+    final Object input,
+    final Context context
   ) {
     // Replace this with your function logic.
     return "Hello World!";
